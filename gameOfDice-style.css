@@ -31,18 +31,28 @@ body {
   font-weight:300;
 }
 
-/* PLAYER 1*/
+.scoreStyle {
+  font-size: 6vw;
+  font-weight: 300;
+  padding: -4%;
+  margin: -4%;
+}
 
-#p1Dot {
+/* PLAYER 1 DOT*/
+
+#dot1 {
   position: absolute;
   color: red;
   left: 35%;
 }
 
-#p1Score {
-  font-size: 6vw;
-  font-weight: 100;
-  padding: -4%;
-  margin: -4%;
+/* PLAYER 1 DOT*/
+
+#dot2 {
+  position: absolute;
+  color: red;
+  left: 82%;
 }
+
+
 
