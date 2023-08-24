@@ -16,27 +16,33 @@
     <div id="landscape">
         <p class="fs-2">Please turn to landscape</p>
         <div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone-fill" viewBox="0 0 16 16">
-                <path d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2zm6 11a1 1 0 1 0-2 0 1 1 0 0 0 2 0z"/>
-              </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-              </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone-landscape-fill" viewBox="0 0 16 16">
-                <path d="M2 12.5a2 2 0 0 1-2-2v-6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H2zm11-6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
-              </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone-fill"
+                viewBox="0 0 16 16">
+                <path
+                    d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2zm6 11a1 1 0 1 0-2 0 1 1 0 0 0 2 0z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-phone-landscape-fill" viewBox="0 0 16 16">
+                <path
+                    d="M2 12.5a2 2 0 0 1-2-2v-6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H2zm11-6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+            </svg>
         </div>
 
     </div>
 
-    <main class="p-4 bg-danger vw-100 vh-100">
-        <section class="d-flex justify-content-center w-100 h-100" style="box-shadow: 5px 5px 30px black;">
+    <main class="p-4 bg-danger vw-100 vh-100 container-fluid d-flex justify-content-center align-items-center">
+        <section class="d-flex justify-content-center w-100 h-100 position-relative" style="box-shadow: 5px 5px 30px black;">
 
             <!--PLAYER 1-->
 
             <div class="bg-body-secondary w-50 h-100 d-flex flex-column justify-content-evenly align-items-center">
                 <div class="d-flex flex-column justify-content-center align-items-center">
-                    <div class="container-fluid d-flex flex-column justify-content-around align-items-center">
+                    <div class="d-flex flex-column justify-content-around align-items-center">
                         <div class="pSize" style="width: 50%!;">
                             PLAYER 1
                         </div>
@@ -61,7 +67,7 @@
 
             <div class="bg-white w-50 h-100 d-flex flex-column justify-content-evenly align-items-center">
                 <div class="d-flex flex-column justify-content-center align-items-center">
-                    <div class="container-fluid d-flex flex-column justify-content-around align-items-center">
+                    <div class="d-flex flex-column justify-content-around align-items-center">
                         <div class="pSize" style="width: 50%!;">
                             PLAYER 2
                         </div>
@@ -82,7 +88,53 @@
                 </div>
             </div>
 
+            
+            <!--COMMAND BAR-->
+            <div class="z-2 position-absolute d-flex flex-column justify-content-around align-items-center" id="toolbar">
+                <div class="fs-2 fw-light d-flex align-items-center w-100 justify-content-evenly" id="newGame">
+                    <div class="me-3 text-danger d-flex justify-content-center align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                        class="bi bi-plus-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                        <path
+                            d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                    </svg>
+                    </div>
+
+                    NEW GAME
+                </div>
+                <!--DICE-->
+                <div class="dice bg-white rounded shadow ">
+
+                </div>
+                <div class="mb-5 mt-2 d-flex flex-column align-items-center">
+                    <div class="mb-2 p-2 fs-4 d-flex align-items-center w-100 justify-content-evenly fw-light" id="rollDice">
+                        <div class="me-3 text-danger d-flex justify-content-center align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                                <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"/>
+                                <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"/>
+                              </svg>
+                        </div>
+
+                           ROLL DICE
+                     </div>
+                     <div class="mt-2 pb-4 fs-4 d-flex align-items-center w-100 justify-content-center fw-light" id="hold">
+                        <div class="text-danger me-3 d-flex justify-content-center align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-box-arrow-in-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1h-2z"/>
+                            <path fill-rule="evenodd" d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                          </svg>
+                        </div>
+                           HOLD
+                     </div>
+                </div>
+
+                
+            </div>
+
         </section>
+
+
 
     </main>
 
