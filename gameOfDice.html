@@ -1,17 +1,60 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="Description" content="Challenge your friends to the game of dice">
-  <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
-  <title>Game of Dice</title>
+    <meta charset="UTF-8">
+    <meta name="Description" content="Challenge your friends to the game of dice">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="gameOfDice-style.css">
+    <title>Game of Dice</title>
 </head>
+
 <body class="p-0 m-0">
-  <main class="p-4 bg-danger vw-100 vh-100">
-    <section class="d-flex justify-content-center w-100 h-100" style="box-shadow: 5px 5px 30px black;">
-      <div class="bg-body-secondary w-50 h-100"></div>
-      <div class="bg-white w-50 h-100"></div>
-    </section>
-  </main>
+    <div id="landscape">
+        <p>Please turn to landscape</p>
+        <div>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap" rel="stylesheet">
+        </div>
+
+    </div>
+
+    <main class="p-4 bg-danger vw-100 vh-100">
+        <section class="d-flex justify-content-center w-100 h-100" style="box-shadow: 5px 5px 30px black;">
+            <div class="bg-body-secondary w-50 h-100 d-flex flex-column justify-content-evenly align-items-center">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <div class="container-fluid d-flex flex-column justify-content-around align-items-center">
+                        <div class="pSize" style="width: 50%!;">
+                            PLAYER 1
+                        </div>
+                        <div class="position-absolute" id="p1Dot">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor"
+                                class="bi bi-dot" viewBox="0 0 16 16">
+                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="text-danger" id="p1Score">0</div>
+                </div>
+
+
+                <div class="p-4 bg-danger d-flex flex-column justify-content-center align-items-center">
+                    <div>CURRENT</div>
+                    <div class="text-white">0</div>
+                </div>
+                
+
+            </div>
+            <div class="bg-white w-50 h-100"></div>
+
+        </section>
+
+    </main>
+
 </body>
+
 </html>
