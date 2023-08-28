@@ -61,8 +61,13 @@ body {
 }
 
 /**DICE**/
+
 .dice {
   height: 120px;
   width: 120px;
+  display: none;
 }
 
+#dice5 {
+  display: flex;
+}
