@@ -68,4 +68,7 @@ body {
   display: none;
 }
 
+#rollDice, #hold, #newGame {
+  cursor: pointer;
+}
 
