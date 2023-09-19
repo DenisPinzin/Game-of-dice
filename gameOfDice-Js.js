@@ -2,20 +2,38 @@
 
 const j1Round = document.getElementById('round1')
 const global1 = document.getElementById('global1')
+const j1Win = document.getElementById('j1Win')
 const j2Round = document.getElementById('round2')
 const global2 = document.getElementById('global2')
+const j2Win = document.getElementById('j2Win')
 const dot1 = document.getElementById('dot1')
 const dot2 = document.getElementById('dot2')
 const dice = document.getElementsByClassName('dice')
 const newGame = document.getElementById('newGame')
 const hold = document.getElementById('hold')
 const rolldice = document.getElementById('rollDice')
+const rules = document.getElementById('rules')
+const closeModal = document.getElementById('closeModal')
 
+
+//RELOAD NEW GAME
+const reload = () => {
+  window.location.reload();
+}
+
+// RULES MODAL
+const rulesDisplay = () => {
+  ruleModalWin.style.display = 'flex'
+}
+const closeRules = () => {
+  ruleModalWin.style.display = 'none'
+}
 
 //REMOVE LISTENER ROLL-DICE & HOLD
 const rmvHoldAndRoll = () => {
   rolldice.removeEventListener('click', rolldiceClk)
   hold.removeEventListener('click', holdClk)
+  rules.removeEventListener('click', rulesDisplay)
 }
 
 
@@ -105,6 +123,8 @@ const holdScoreJ1 = () => {
       globalJ1 = 100
       global1.innerHTML = 100
       rmvHoldAndRoll()
+      j1Win.style.display = 'flex'
+      newGame.setAttribute("class", "newGameL")
     } else if (globalJ2 < 100) {
 
     } else {
@@ -115,6 +135,7 @@ const holdScoreJ1 = () => {
     J1rndScore = 0
     J1roundDisplay()
     rmvHoldAndRoll()
+    newGame.setAttribute("class", "newGameL")
   } else {
     console.log('error global J1')
   }
@@ -170,6 +191,8 @@ const holdScoreJ2 = () => {
       globalJ2 = 100
       global2.innerHTML = 100
       rmvHoldAndRoll()
+      j2Win.style.display = 'flex'
+      newGame.setAttribute("class", "newGameL")
     } else if (globalJ2 < 100) {
 
     } else {
@@ -180,6 +203,7 @@ const holdScoreJ2 = () => {
     J2rndScore = 0
     J2roundDisplay()
     rmvHoldAndRoll()
+    newGame.setAttribute("class", "newGameL")
   } else {
     console.log('error global J2')
   }
@@ -208,5 +232,8 @@ const holdClk = () => {
 }
 
 //EVENTS
+newGame.addEventListener('click', reload)
 rolldice.addEventListener('click', rolldiceClk)
 hold.addEventListener('click', holdClk)
+rules.addEventListener('click', rulesDisplay)
+closeModal.addEventListener('click', closeRules)
