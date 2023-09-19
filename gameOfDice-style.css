@@ -122,6 +122,9 @@ width: 100%;
 }
 
 /*RULES MODAL*/
+#rules {
+  cursor: pointer;
+}
 
 #ruleModalWin {
   display: none;
